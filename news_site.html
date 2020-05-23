@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<head>
+
+<!-- title for browser tab -->
+    <title>Blakley News</title>
+    
+<!-- materialize framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="scripts/materialize.min.js"></script>
+<!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    
+<!-- scripts and links for help tour -->
+    <script src="https://rawgit.com/iamdanfox/anno.js/gh-pages/dist/anno.js" type="text/javascript"></script>
+    <script src="https://rawgit.com/litera/jquery-scrollintoview/master/jquery.scrollintoview.js" type="text/javascript"></script>
+    <link href="https://rawgit.com/iamdanfox/anno.js/gh-pages/dist/anno.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+   
+<!-- stylesheet linked -->
+    <link rel="stylesheet" type="text/css" href="styles/news.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+   
+    
+<!-- bootstrap nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Blakley News</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav" id="navbarhelp">
+      <a class="nav-item nav-link active" href="news_site.html" >Home</a>
+      <a class="nav-item nav-link" href="" id="sport">Sport</a>
+      <a class="nav-item nav-link" href="" id="technology">Technology</a>
+      <a class="nav-item nav-link" href="" id="entertainment">Entertainment</a>
+    <a class="nav-item nav-link" href="" id="science">Science</a>  
+    </div>     
+  </div>
+</nav>
+    
+</head>
+    
+    
+<!-- to create the news api website I used the following YouTube tutorial https://www.youtube.com/watch?v=hfKzh0IhtpY  -->
+
+<body id="body" class="body">
+        <br><br>    
+
+        <button id="help" class="btn btn-default">Help</button>
+       
+    <br><br><br>
+ 
+        <button id="toparticles" class="btn btn-default">Top Stories!</button>
+  
+ 
+    <div class="container">
+      
+  
+     
+          
+<!--- SEARCH -->
+         <div id="searchsection">
+<!-- input field to search for news article using keywords, defined in scripts.js file. -->
+        <input type="text" id="searchquery" data-toggle="tooltip" class="tip-bottom" title="Start typing a keyword to search relevant news articles" placeholder="Search for news...">
+          </div>
+          <br>
+          
+
+ <!-- new row for search button, bootstrap layout -->            
+        <div class="row">
+        <input type="submit" id="searchbtn" class="btn btn-default" value="search" style="width:20%;">
+        </div>
+  
+     
+    
+<!-- bootstrap progress bar, taken from https://mdbootstrap.com/docs/jquery/components/progress-bar/ -->
+    <div id="loadingbar" style="display:none;"> 
+    <div class="progress md-progress primary-color-dark">
+    <div class="indeterminate"></div>
+    </div>
+    </div>   
+  
+          
+     
+<!-- div to display news articles -->
+    <div class="row">
+    <div id="newsarticles" class="news"></div>
+    </div>
+
+</div>
+       
+  
+</body>
+</html>
+
+<!-- scripts -->
+<script src="scripts/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="scripts/scripts.js"></script>
+
+
+
+<!-- links for bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
